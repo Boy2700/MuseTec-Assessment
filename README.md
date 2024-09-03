@@ -1,70 +1,122 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+```markdown
+# MuseTec Login and Dashboard Application
 
-## Available Scripts
+This project is part of a technical assessment for the Software Developer position at MuseTec. The task was to recreate a login page and a dashboard using React.js, Node.js, and Express. The goal is to demonstrate skills in building responsive and visually accurate web pages, as well as backend functionality.
 
-In the project directory, you can run:
+## Objective
 
-### `npm start`
+The main objectives of this assessment were:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Recreate the login page based on the provided design using React.js, Node.js, and Express.
+- Ensure the login page is responsive and visually matches the provided design.
+- Validate the user's login credentials using a static username and password.
+- After successful login, redirect the user to a dashboard.
+- Demonstrate the ability to create a functional and user-friendly interface on the dashboard.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Prerequisites
 
-### `npm test`
+Before you start, ensure you have the following installed on your machine:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Node.js**: Download and install from [nodejs.org](https://nodejs.org/).
+- **npm**: Node Package Manager, included with Node.js.
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Clone the Repository
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Clone the repository to your local machine:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/Boy2700/MuseTec-Assessment.git
+cd MuseTec-Assessment
+```
 
-### `npm run eject`
+### 2. Install Dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Navigate to the project directory and install the required dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This will install all necessary packages for both the frontend and backend.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 3. Running the Application
 
-## Learn More
+#### Backend (Node.js + Express)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To start the Node.js server, ensure you are in the `backend` directory and use the following command:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+node server.js
+```
 
-### Code Splitting
+This will start the server on `http://localhost:5000`. The server handles login requests and validates user credentials.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### Frontend (React.js)
 
-### Analyzing the Bundle Size
+In another terminal, navigate to the `musetec-login` directory and start the React development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm start
+```
 
-### Making a Progressive Web App
+This will start the frontend on `http://localhost:3000`. The login page will be accessible here, and after successful login, the user will be redirected to the dashboard.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 4. Login Credentials
 
-### Advanced Configuration
+Use the following static credentials to log in:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- **Username**: yusuf
+- **Password**: yusuf
 
-### Deployment
+### 5. Accessing the Dashboard
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+After successful login, you will be redirected to the dashboard. The dashboard is designed to demonstrate a functional interface with a redirection to the actual MuseTec dashboard.
 
-### `npm run build` fails to minify
+## Images Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+All images used in this project are sourced from [Unsplash](https://unsplash.com/).
+
+## Testing
+
+Ensure that the login flow is tested thoroughly:
+
+- **Invalid Credentials**: Test with incorrect username and password to verify that the login fails.
+- **Valid Credentials**: Test with the correct username and password to ensure a successful login and redirection to the dashboard.
+- **Responsiveness**: Test the application on different devices and screen sizes to verify responsiveness.
+
+## Project Structure
+
+A quick overview of the project structure:
+
+```
+MuseTec-Assessment/
+│
+├── musetec-login
+│   ├── backend
+│   │   └── server.js           # Node.js server file
+│   ├── client                  # React frontend files
+│   │   ├── src
+│   │   │   ├── components
+│   │   │   │   ├── Login
+│   │   │   │   └── Dashboard
+│   │   └── public
+│   └── package.json            # npm dependencies and scripts
+└── README.md                   # This file
+```
+
+## Acknowledgements
+
+- **React.js**: A JavaScript library for building user interfaces.
+- **Node.js**: JavaScript runtime for the backend.
+- **Express**: Web framework for Node.js.
+- **Unsplash**: Source of images used in the project.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more information.
+
+![alt text](image.png)
+```
