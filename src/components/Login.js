@@ -41,19 +41,24 @@ const Login = () => {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
-      <button type="submit">Sign up</button>
+      <button type="submit">Log in</button>
       <p>Already have an Account? <a href='##'>Sign in</a></p>
       <p>Are you a vendor? <a href='##'>Start Here</a></p>
 
   <div class="links-container">
   <div class="link-item">Privacy Policy</div>
-  <div class="link-item">Terms Conditions</div>
+  <div class="link-item">Terms & Conditions</div>
   <div class="link-item">Support</div>
 </div>
 
     </form>
 
   </div>
+  
+
+  <footer class="footer">
+  <p>&copy; Allright reserved Login Assessment || Yusuf Babatunde</p>
+</footer>
 </div>
 
   );
