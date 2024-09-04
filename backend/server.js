@@ -7,7 +7,7 @@ app.use(express.json());
 // Simple route for login
 app.post('/api/login', (req, res) => {
   const { username, password } = req.body;
-  if (username === 'yusuf' && password === 'yusuf') {
+  if (username === 'yusuf' && password === 'yusu') {
     res.status(200).send({ message: 'Login successful' });
   } else {
     res.status(401).send({ message: 'Invalid credentials' });
